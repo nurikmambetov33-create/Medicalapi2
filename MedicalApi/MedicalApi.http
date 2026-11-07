@@ -1,0 +1,26 @@
+@MedicalApi_HostAddress = http://localhost:5290
+
+GET {{MedicalApi_HostAddress}}/api/SpravkaTypes
+Accept: application/json
+
+###
+
+GET {{MedicalApi_HostAddress}}/api/patients
+Accept: application/json
+
+###
+
+POST {{MedicalApi_HostAddress}}/api/spravki
+Content-Type: application/json
+
+{
+  "patientId": 1,
+  "spravkaTypeId": 3
+}
+
+###
+
+GET {{MedicalApi_HostAddress}}/api/spravki/stats
+Accept: application/json
+
+###
